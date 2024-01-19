@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css */
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
+  
+  .spin {
+    animation: spin 1s linear infinite;
+  }
+  
+/* Add this to your existing CSS file or style tag */
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.animate__zoomIn {
+    animation: zoomIn 1s ease;
+}
